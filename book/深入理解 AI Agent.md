@@ -70,10 +70,6 @@ git clone https://github.com/bojieli/ai-agent-book.git
 cd ai-agent-book
 ```
 
-不熟悉 Git 的读者也可以在仓库页面点击 **Code → Download ZIP** 下载。实验代码按章节组织在 `../code/chapter1/` 至 `../code/chapter10/` 中；要查找“实验 X-Y”，请先打开对应的 `chapterX/README.md`，根据实验编号找到项目目录，再按照项目自身的 README 安装依赖并运行。部分标为“复现指南”的实验依赖外部仓库，具体获取方式也会在相应的 README 中说明。
-
-我强烈建议你动手跑一遍这些实验。AI Agent 是一个实践性极强的领域，很多设计上的直觉需要在动手调试的过程中才能真正建立起来。
-
 ## 3 前置知识 {.unnumbered}
 
 本书面向有一定技术背景的读者，但不要求你是某个特定领域的专家。以下按“必需”和“推荐”两个层次列出前置知识，帮助你评估自己的准备程度。
