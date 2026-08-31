@@ -6,7 +6,6 @@ build-backend = "setuptools.build_meta"
 name = "agentbook"
 version = "0.1.0"
 description = "Shared packaging and plumbing for the ai-agent-book companion experiments"
-readme = "README.md"
 # 3.11 matches what the chapter READMEs document (chapter2/local_llm_serving,
 # chapter7/orpheus, chapter8/prompt-distillation all state Python 3.10+, which
 # 3.11 continues to satisfy). The CUDA/ML stacks used by the training chapters
@@ -360,6 +359,7 @@ Homepage = "https://github.com/bojieli/ai-agent-book"
 Issues = "https://github.com/bojieli/ai-agent-book/issues"
 
 [tool.setuptools.packages.find]
+where = ["code"]
 include = ["agentbook*"]
 
 [tool.ruff]
@@ -373,9 +373,9 @@ line-length = 100
 # which is how pre-commit invokes ruff and how the mistake below happens.
 force-exclude = true
 extend-exclude = [
-    "chapter8/gaia-experience/AWorld",
-    "chapter8/browser-use-rpa/browser-use",
-    "chapter2/prompt-engineering/tau_bench",
+    "code/chapter8/gaia-experience/AWorld",
+    "code/chapter8/browser-use-rpa/browser-use",
+    "code/chapter2/prompt-engineering/tau_bench",
     "_web",
 ]
 
@@ -387,4 +387,4 @@ extend-exclude = [
 # Formatter-only, not an entry in extend-exclude above -- that list is global,
 # so excluding them there would also end `ruff check` coverage for the
 # directory. The trailing /* matters: a bare directory name is not matched here.
-exclude = ["chapter1/web-search-agent/tests/*"]
+exclude = ["code/chapter1/web-search-agent/tests/*"]
